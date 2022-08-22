@@ -5,7 +5,7 @@ echo "Building the application ..."
 echo "============================"
 echo " "
 
-pushd ../../site/beebee.web.spa/ClientApp/
+pushd ../site/beebee.web.spa/ClientApp/
 npm run build
 popd
 
