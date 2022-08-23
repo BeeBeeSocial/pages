@@ -3,7 +3,7 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img src="{{ "/beebee-logo-512x512.png" | relative_url }}" alt="site logo" style="height: 30px" /></a>&nbsp;&nbsp;<a class="site-title" rel="author" href="{{ "/" | relative_url }}"><span class="title-link">{{ site.title | escape }}</span></a>
+    <a class="site-title" rel="author" href="/buzz"><img src="{{ "/beebee-logo-512x512.png" | relative_url }}" alt="site logo" style="height: 30px" /></a>&nbsp;&nbsp;<a class="site-title" rel="author" href="/buzz"><span class="title-link">{{ site.title | escape }}</span></a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
@@ -17,8 +17,8 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link active" href="/pages/blog/">Blog</a>
-          <a class="page-link" href="/pages/help/">Help</a>
+          <a class="page-link active" href="/blog/">Blog</a>
+          <a class="page-link" href="/help/">Help</a>
         </div>
       </nav>
     {%- endif -%}
