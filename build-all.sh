@@ -40,6 +40,7 @@ echo " "
 
 rm -rf docs/
 mkdir docs/
+echo beebee.social > docs/CNAME
 
 echo " "
 echo "============================="
