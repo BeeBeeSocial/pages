@@ -6,6 +6,7 @@ echo "============================"
 echo " "
 
 pushd ../site/beebee.web.spa/ClientApp/
+rm -rf build/
 npm run build
 popd
 
@@ -16,6 +17,7 @@ echo "====================="
 echo " "
 
 pushd blog/
+rm -rf _site/
 bundle exec jekyll build
 popd
 
@@ -26,6 +28,7 @@ echo "============================="
 echo " "
 
 pushd help/
+rm -rf _site/
 bundle exec jekyll build
 popd
 
