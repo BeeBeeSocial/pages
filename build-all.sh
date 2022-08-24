@@ -57,5 +57,16 @@ cp -R ../help/_site/ help/
 popd
 
 echo " "
+echo "=============================="
+echo "Copying mock api data to docs/"
+echo "=============================="
+echo " "
+
+pushd docs/
+mkdir api/
+cp -R ../api/_site/ api/
+popd
+
+echo " "
 echo "Done."
 echo " "
