@@ -64,7 +64,7 @@ echo " "
 
 pushd docs/
 mkdir api/
-cp -R ../api/_site/ api/
+cp -R ../api/ api/
 popd
 
 echo " "
