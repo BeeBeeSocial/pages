@@ -16,6 +16,9 @@ layout: default
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
+        {%- if post.featured_image -%}
+        <img src='{{ post.featured_image | relative_url }}' alt="post image" style="width: 50%; float:right; margin-left: 20px;" />
+        {%- endif -%}
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
@@ -24,6 +27,7 @@ layout: default
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
+        <p style="clear:both;"><a href="{{ post.url | relative_url }}">Read More ...</a></p>
       </li>
       {%- endfor -%}
     </ul>
